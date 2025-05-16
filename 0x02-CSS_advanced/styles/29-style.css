@@ -8,7 +8,7 @@
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
   --section-title-color: var(--color-black);
-  --nav-item-link-hover: var(--color-primary);
+  --nav-item-link-hover: var(--color-white);
 
   --font-family-base: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-family-title: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -240,10 +240,10 @@ nav .nav-link::before {
   left: 0;
   background-color: var(--color-white);
   width: 0;
-  height: 20%;
+  height: 0.2rem;
 }
 
-nav .nav-item:hover .nav-link::before {
+nav .nav-item:hover > .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
 }
