@@ -172,7 +172,7 @@ footer {
   color: var(--nav-item-link-hover);
 }
 
-ul[class="row"] {
+ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -190,6 +190,12 @@ ul[class="row"] {
   padding: 0.5rem;
 }
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
@@ -198,10 +204,4 @@ ul[class="row"] {
 
 .footer ul {
   text-align: right;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
