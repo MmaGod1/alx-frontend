@@ -29,6 +29,7 @@
   --section-tagline-transform: uppercase;
 
   --section-title-margin: 0;
+  --section-tagline-margin: 0;
   --section-padding: 5rem 0;
   --section-header-padding: 0 0 3rem;
   --section-body-padding: 0 0 3rem;
@@ -43,7 +44,6 @@
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem;
   --nav-item-link-hover: var(--color-primary);
-  --section-tagline-margin: 0;
 }
 
 *,
@@ -75,20 +75,20 @@ h6 {
   font-weight: var(--font-weight-bold);
 }
 
-a[href] {
+a:link {
   color: #161616;
   text-decoration: none;
 }
 
-a[href]:visited {
+a:visited {
   font-style: italic;
 }
 
-a[href]:hover {
+a:hover {
   text-decoration: underline;
 }
 
-a[href]:active {
+a:active {
   background-color: var(--color-light-grey);
 }
 
@@ -172,7 +172,7 @@ footer {
   color: var(--nav-item-link-hover);
 }
 
-ul[class="row"] {
+ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
